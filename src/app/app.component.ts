@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  name: string = "Luca";
+  name: string = "Watermelon sugar";
   array: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9 ,10];
   PI: number = Math.PI;
   percentage: number = 0.234;
