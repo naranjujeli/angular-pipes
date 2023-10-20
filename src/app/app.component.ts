@@ -15,7 +15,16 @@ export class AppComponent {
     alias: "Wolverine",
     edad: 500,
     address: {
-      
+      a: "a",
+      b: "b",
+      c: "c"
     }
   }
+  promise = new Promise<string>((resolve) => {
+    setTimeout(() => {
+      resolve("Datos recibidos");
+    }, 4500)
+  });
+  date: Date = new Date();
+  language = 'es';
 }

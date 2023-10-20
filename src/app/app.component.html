@@ -89,6 +89,55 @@
           <th>currency:'EUR'</th>
           <th>{{ salary | currency:'EUR' }}</th>
         </tr>
+
+        <tr>
+          <th>{{ superhero }}</th>
+          <th>json</th>
+          <th>{{ superhero | json }}</th>
+        </tr>
+
+        <tr>
+          <th>{{ promise }}</th>
+          <th>async</th>
+          <th>{{ promise | async }}</th>
+        </tr>
+
+        <!-- https://angular.io/api/common/DatePipe -->
+        <tr>
+          <th>{{ date }}</th>
+          <th>date</th>
+          <th>{{ date | date }}</th>
+        </tr>
+
+        <tr>
+          <th>{{ date }}</th>
+          <th>date: 'medium'</th>
+          <th>{{ date | date: 'medium' }}</th>
+        </tr>
+        
+        <tr>
+          <th>{{ date }}</th>
+          <th>date: 'short'</th>
+          <th>{{ date | date: 'short' }}</th>
+        </tr>
+
+        <tr>
+          <th>{{ date }}</th>
+          <th>date: 'MMMM yy'</th>
+          <th>{{ date | date: 'MMMM - yy' }}</th>
+        </tr>
+
+        <tr>
+          <th>{{ date }}</th>
+          <th>date: 'MMMM yy'</th>
+          <th>
+            {{ date | date: 'MMMM - yy':'':language }}
+            <br>
+            <button (click)="language= 'es'" class="btn btn-primary">Español</button>
+            <button (click)="language= 'en'" class="btn btn-danger">Inglés</button>
+            <button (click)="language= 'fr'" class="btn btn-secondary">Frances</button>
+          </th>
+        </tr>
       </tbody>
     </table>
   </div>
